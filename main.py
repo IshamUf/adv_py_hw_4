@@ -51,7 +51,8 @@ async def ping_point():
 @app.get("/help")
 async def help_point():
     ans = "Доступные модели: arima (/arima/{ticket} или /arima/{ticket}/{days}), catboost (/cat?ticket=AAPL&days=3)" \
-          "Для методов без указания дней, количество дней является 5"
+          " Для методов без указания дней, количество дней является 5, также можно посмотреть гороскоп на сегодня " \
+          "с помощью метода /horoscope, также можно получить гороскоп на определенный знак зодиака /horoscope?leo"
     return ans
 
 
