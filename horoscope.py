@@ -10,8 +10,7 @@ def get_text(url):
             strip=True)
         return text
     except Exception as e:
-        print(f"Ошибка при запросе к {url}: {e}")
-        return None
+        return f"Ошибка при запросе к {url}: {e}"
 
 
 def get_horoscope(sign=None):
@@ -19,7 +18,3 @@ def get_horoscope(sign=None):
         return get_text(f"https://horo.mail.ru/")
     else:
         return get_text(f"https://horo.mail.ru/prediction/{sign}/today/")
-
-
-print(get_horoscope('dfgvdf'))
-print(str(None))
