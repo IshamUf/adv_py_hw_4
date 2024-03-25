@@ -10,7 +10,7 @@
 
 Знаки зодиак: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces.
 
-*main.py - основной код FastApi.
-*Horoscope.py - код для парсинга гороскопов.
-*model_arima.py - код для ARIMA модели.
-*model_catboost.py - код для CATBOOST модели.
+*main.py - основной код FastApi.\
+*Horoscope.py - код для парсинга гороскопов.\
+*model_arima.py - код для ARIMA модели.\
+*model_catboost.py - код для CATBOOST модели.\
