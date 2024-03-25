@@ -13,4 +13,4 @@
 *main.py - основной код FastApi.\
 *Horoscope.py - код для парсинга гороскопов.\
 *model_arima.py - код для ARIMA модели.\
-*model_catboost.py - код для CATBOOST модели.\
+*model_catboost.py - код для CATBOOST модели.
