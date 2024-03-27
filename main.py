@@ -1,7 +1,7 @@
 from models.model_arima import get_prediction_arima
 from models.model_сatboost import get_prediction_catboost
 from fastapi import FastAPI
-import aioredis
+from redis import asyncio as aioredis
 from horoscope import get_horoscope
 from datetime import datetime
 
@@ -16,7 +16,8 @@ redis = None
 @app.on_event("startup")
 async def startup_event():
     global redis
-    redis = aioredis.from_url("redis://redis")
+    # redis = aioredis.from_url("redis://redis:5370")
+    redis = aioredis.from_url(f"redis://redis:5370", encoding="utf8", decode_responses=True)
 
 
 async def check_cache(ticket: str, days: int):
